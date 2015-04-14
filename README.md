@@ -74,13 +74,15 @@ Set if the charNamePrefix string should be stripped from the character names.
 grunt.initConfig({
   zapf2scss: {
     my_sample: {
-        zaptTable: 'src/zapf-table/SymbolFont.xml',
-        sass: 'src/sass/_glyphs.scss',
-        sassListName: '$sf-icons'
-        charNamePrefix: 'ink-',
-        stripCharNamePrefix: true
+        options: {
+          zapfTable: 'src/zapf-table/SymbolFont.xml',
+          sass: 'src/sass/_glyphs.scss',
+          sassListName: '$sf-icons',
+          charNamePrefix: 'ink-',
+          stripCharNamePrefix: true
+      }
     }
-  },
+  }
 });
 ```
 
