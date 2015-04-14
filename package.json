@@ -3,10 +3,7 @@
   "description": "Creates a SASS list with character names and unicode from a Zapf table generated with ftxanalyzer.",
   "version": "0.0.1",
   "homepage": "https://github.com/pedrocorreia/zapf2scss",
-  "author": {
-    "name": "Pedro Correia",
-    "email": "pedro.correia@gmail.com"
-  },
+  "author": "Pedro Correia <pedro.correia@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/pedrocorreia/zapf2scss.git"
@@ -41,5 +38,9 @@
   "dependencies": {
     "chalk": "^0.4.0",
     "xml2js": "^0.4.4"
+  },
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
   }
 }
