@@ -29,16 +29,15 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    font_sampler: {
-      my_sample: {
-          fontname: 'Ink-Icons',
-          charmap: 'glyphs.json',
-          dest: 'dist/sample.html',
-          sizes: [16,18,20,22,24,26,28,30,32,34,36,38,40],
-          stylesheets: ["http://cdn.ink.sapo.pt/3.0.2/css/ink.min.css","css/ink-icons.css"],
-          col_width: 100,
-          sample_template: '<div class="all-{% width %} p{% size %}">\n<p>{% size %}px</p>{% glyph %}</div>\n',
-          glyph_template: '<span class="ii ii-{% glyph %}"></span>\n'
+    zapf2scss: {
+      dist: {
+            options: {
+              zapfTable: 'chars',
+              sass: 'src/sass/_glyphs.scss',
+              sassListName: '$sf-icons',
+              charNamePrefix: 'ink-',
+              stripCharNamePrefix: false
+            }
       }
     },
 
@@ -59,7 +58,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'font_sampler', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'zapf2scss', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

@@ -1,23 +1,23 @@
 {
-  "name": "grunt-font-sampler",
-  "description": "The best Grunt plugin ever.",
-  "version": "1.3.4",
-  "homepage": "https://github.com/pedrocorreia/font-sampler",
+  "name": "zapf2scss",
+  "description": "Creates a SASS list with character names and unicode from a Zapf table generated with ftxanalyzer.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pedrocorreia/zapf2scss",
   "author": {
     "name": "Pedro Correia",
-    "email": "pedro.a.correia@co.sapo.pt"
+    "email": "pedro.correia@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pedrocorreia/font-sampler.git"
+    "url": "git://github.com/pedrocorreia/zapf2scss.git"
   },
   "bugs": {
-    "url": "https://github.com/pedrocorreia/font-sampler/issues"
+    "url": "https://github.com/pedrocorreia/zapf2scss/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/pedrocorreia/font-sampler/blob/master/LICENSE-MIT"
+      "url": "https://github.com/pedrocorreia/zapf2scss/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
