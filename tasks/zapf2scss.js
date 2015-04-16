@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 
             if( unicode.match(/\+E([a-z0-9])/g) !== null )
             {
-                scss += "\t('"+name+"','"+unicode.replace("U\+",'\\').toLowerCase()+"'),\n";
+                scss += "\t('"+name+"','"+unicode.replace("U\+",'').toLowerCase()+"'),\n";
                 glyphs.push(name);
             }
         }
