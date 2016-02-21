@@ -1,7 +1,7 @@
 {
   "name": "zapf2scss",
   "description": "Creates a SASS list with character names and unicode from a Zapf table generated with ftxanalyzer.",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "homepage": "https://github.com/pedrocorreia/zapf2scss",
   "author": "Pedro Correia <pedro.correia@gmail.com>",
   "repository": {
@@ -30,7 +30,7 @@
     "grunt-contrib-nodeunit": "~0.2.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin"
